@@ -41,4 +41,4 @@ require(['./bower_components/ecjson/dist/ecjson.min.js'], function (Immutable) {
 License
 -------
 
-ECJson released under the MIT license.
+ECJson released under the [MIT](https://github.com/CapJS/ECJson/blob/master/LICENSE) license.
