@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<script src="../bower_components/jquery/dist/jquery.js"></script>
+		<script src="../dist/ecjson.min.js"></script>
+		<title>Provando Ec-Json</title>
+	</head>
+	<body>
+		<script>
+		e = new ecjson
+		e.url = "test/request.json"
+		e.on('simple',function(d){console.log(d.simple)})
+		e.call()
+		</script>
+	</body>
+</html>

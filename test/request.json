@@ -1,0 +1,15 @@
+{
+	"simple": "hola consulta!!",
+	"listas": [
+		"item 1",	
+		"item 2",	
+		"item 3",	
+		"item 4",	
+		"item 5",	
+		"item 6"	
+	],
+	"config": {
+		"titulo": "Titulo de conuslta",
+		"subTitulo": "SubTitulo de consulta"
+	}
+}
