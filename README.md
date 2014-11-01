@@ -28,7 +28,7 @@ Then, add it as a script tag to your page:
 </script>
 ```
 
-Or use an AMD loader (such as RequireJS):
+Or use an AMD loader (such as [RequireJS](http://requirejs.org/)):
 ```js
 require(['./bower_components/ecjson/dist/ecjson.min.js'], function (Immutable) {
   e = new ecjson
@@ -37,3 +37,8 @@ require(['./bower_components/ecjson/dist/ecjson.min.js'], function (Immutable) {
   e.call()
 });
 ```
+
+License
+-------
+
+ECJson released under the MIT license.
