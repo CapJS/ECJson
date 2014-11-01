@@ -1,6 +1,6 @@
 /*!
  *
- * ECJson JavaScript Library v1.0.2 - 2014-11-01
+ * ECJson JavaScript Library v1.0.3 - 2014-11-01
  * https://github.com/CapJS/ECJson/
  *
  * Copyright (c) 2014 Jonathan Delgado Zamorano
@@ -94,7 +94,7 @@
 
 	ecjson.url = ""
 	ecjson.method = "get"
-	ecjson.version = '1.0.2'
+	ecjson.version = '1.0.3'
 
 	window.ecjson = ecjson
 
