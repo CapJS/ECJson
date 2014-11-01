@@ -1,4 +1,13 @@
-ECJson
-======
+ECJson content manager
+======================
 
-Gestor inteligente de contenido JSON mediante el uso de eventos planificados.
+Smart Content Manager JSON using scheduled events.
+
+Getting started
+---------------
+
+Install 'immutable' using bower.
+
+```js
+bower install ecjson --save
+```
