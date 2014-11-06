@@ -98,6 +98,10 @@
 			}
 			return ecjson
 		})
+	} else {
+		if ( typeof window.jQuery === "function" && window.jQuery.fn.jquery) {
+			$ = window.jQuery
+		}
 	}
 
 }()
