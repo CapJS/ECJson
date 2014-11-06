@@ -1,14 +1,21 @@
 /*!
  *
- * ECJson JavaScript Library v1.0.3 - 2014-11-01
+ * ECJson JavaScript Library v1.0.5 - 2014-11-05
  * https://github.com/CapJS/ECJson/
  *
  * Copyright (c) 2014 Jonathan Delgado Zamorano
  * Released under the MIT license
  *
  */
-+function($){
++function(){
 	'use strict'
+
+	var $ = null
+	if ( typeof jQuery === "function" && jQuery.fn.jquery) {
+		$ = jQuery
+	} else {
+		throw "It requires jQuery"
+	}
 
 	var ecjson // Se declara la variable
 
@@ -94,8 +101,14 @@
 
 	ecjson.url = ""
 	ecjson.method = "get"
-	ecjson.version = '1.0.3'
+	ecjson.version = '1.0.5'
 
 	window.ecjson = ecjson
 
-}(jQuery)
+	if ( typeof define === "function" && define.amd) {
+		define( "ecjson", ["jQuery"], function() {
+			return ecjson
+		})
+	}
+
+}()
