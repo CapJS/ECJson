@@ -1,6 +1,6 @@
 /*!
  *
- * ECJson JavaScript Library v1.0.5 - 2014-11-05
+ * ECJson JavaScript Library v1.0.6 - 2014-11-06
  * https://github.com/CapJS/ECJson/
  *
  * Copyright (c) 2014 Jonathan Delgado Zamorano
@@ -10,14 +10,8 @@
 +function(){
 	'use strict'
 
-	var $ = null
-	if ( typeof jQuery === "function" && jQuery.fn.jquery) {
-		$ = jQuery
-	} else {
-		throw "It requires jQuery"
-	}
-
 	var ecjson // Se declara la variable
+	var $
 
 	ecjson = function(options) {
 		if (!options) options = {}
@@ -101,12 +95,15 @@
 
 	ecjson.url = ""
 	ecjson.method = "get"
-	ecjson.version = '1.0.5'
+	ecjson.version = '1.0.6'
 
 	window.ecjson = ecjson
-
+	
 	if ( typeof define === "function" && define.amd) {
-		define( "ecjson", ["jQuery"], function() {
+		define( "ecjson", [], function() {
+			if ( typeof jQuery === "function" && jQuery.fn.jquery) {
+				$ = jQuery
+			}
 			return ecjson
 		})
 	}

@@ -2,14 +2,8 @@
 +function(){
 	'use strict'
 
-	var $ = null
-	if ( typeof jQuery === "function" && jQuery.fn.jquery) {
-		$ = jQuery
-	} else {
-		throw "It requires jQuery"
-	}
-
 	var ecjson // Se declara la variable
+	var $
 
 	ecjson = function(options) {
 		if (!options) options = {}
@@ -96,9 +90,12 @@
 	ecjson.version = 'dev'
 
 	window.ecjson = ecjson
-
+	
 	if ( typeof define === "function" && define.amd) {
-		define( "ecjson", ["jQuery"], function() {
+		define( "ecjson", [], function() {
+			if ( typeof jQuery === "function" && jQuery.fn.jquery) {
+				$ = jQuery
+			}
 			return ecjson
 		})
 	}
